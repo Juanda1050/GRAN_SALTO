@@ -1,6 +1,7 @@
 const app = require('./app');
 const path = require('path');
-const { allowedNodeEnvironmentFlags } = require('process');
+require('dotenv').config();
+require('./database');
 
 //settings
 app.set('port', 3000);
